@@ -97,10 +97,7 @@ Files needed to build applications based on %{name}.
 %_kde_includedir/libkdeedu
 %_kde_libdir/libkeduvocdocument.so
 %_kde_libdir/libqtmmlwidget.a
-%dir   %_kde_libdir/cmake/%{name}
-%_kde_libdir/cmake/%{name}/LibKdeEduConfig.cmake
-%_kde_libdir/cmake/%{name}/LibKdeEduTargets-release.cmake
-%_kde_libdir/cmake/%{name}/LibKdeEduTargets.cmake
+%_kde_libdir/cmake/%{name}
 
 #----------------------------------------------------------------------
 
