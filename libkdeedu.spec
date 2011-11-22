@@ -1,12 +1,13 @@
 Name: libkdeedu
 Summary: Free Educational Software based on the KDE technologies
 Version: 4.7.80
-Release: 1
+Release: 2
 Group: Graphical desktop/KDE
 License: GPLv2
 URL: http://edu.kde.org
 Source: ftp://ftp.kde.org/pub/kde/stable/%version/src/%{name}-%version.tar.bz2
 BuildRequires: kdelibs4-devel >= 2:%{version}
+BuildRequires: automoc4
 # Add conflicts again khangman since some kvtml files were stored in the khangman package
 Conflicts: khangman < 4.6.90
 Conflicts: kanagram < 4.6.90
