@@ -1,6 +1,6 @@
 Name: libkdeedu
 Summary: Free Educational Software based on the KDE technologies
-Version: 4.7.90
+Version: 4.7.95
 Release: 1
 Group: Graphical desktop/KDE
 License: GPLv2
