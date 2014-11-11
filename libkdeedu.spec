@@ -1,21 +1,16 @@
 Summary:	Free Educational Software based on the KDE technologies
 Name:		libkdeedu
-Version:	4.14.2
+Version:	4.14.3
 Release:	1
+License:	GPLv2+
 Group:		Graphical desktop/KDE
-License:	GPLv2
 Url:		http://edu.kde.org
-Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	kdelibs4-devel
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	automoc4
-# Add conflicts again khangman since some kvtml files were stored in the khangman package
-Conflicts:	khangman < 4.6.90
-Conflicts:	kanagram < 4.6.90
-Obsoletes:	kdeedu4 < 4.6.90
-Obsoletes:	kdeedu4-core < 4.6.90
+BuildRequires:	kdelibs4-devel
 
 %description
-Runtime library for KDE Education Application
+Runtime library for KDE Education Application.
 
 %files
 %doc README AUTHORS
@@ -113,6 +108,10 @@ Files needed to build applications based on %{name}.
 %makeinstall_std -C build
 
 %changelog
+* Tue Nov 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.3-1
+- New version 4.14.3
+- Drop ancient Conflicts and Obsoletes
+
 * Wed Oct 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.2-1
 - New version 4.14.2
 
