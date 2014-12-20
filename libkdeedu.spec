@@ -1,6 +1,6 @@
 Summary:	Free Educational Software based on the KDE technologies
 Name:		libkdeedu
-Version:	14.11.97
+Version:	14.12.0
 Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -58,8 +58,8 @@ Files needed to build applications based on %{name}.
 %makeinstall_std -C build
 
 %changelog
-* Tue Nov 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 14.11.97-1
-- New version 14.11.97
+* Tue Nov 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 14.12.0-1
+- New version 14.12.0
 - Drop ancient Conflicts and Obsoletes
 
 * Wed Oct 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.2-1
