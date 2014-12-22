@@ -1,71 +1,16 @@
 Summary:	Free Educational Software based on the KDE technologies
 Name:		libkdeedu
-Version:	4.13.3
-Release:	1
+Version:	14.12.0
+Release:	2
+License:	GPLv2+
 Group:		Graphical desktop/KDE
-License:	GPLv2
 Url:		http://edu.kde.org
-Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	kdelibs4-devel
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	automoc4
-# Add conflicts again khangman since some kvtml files were stored in the khangman package
-Conflicts:	khangman < 4.6.90
-Conflicts:	kanagram < 4.6.90
-Obsoletes:	kdeedu4 < 4.6.90
-Obsoletes:	kdeedu4-core < 4.6.90
+BuildRequires:	kdelibs4-devel
 
 %description
-Runtime library for KDE Education Application
-
-%files
-%doc README AUTHORS
-%dir %{_kde_appsdir}/kvtml/en
-%{_kde_appsdir}/kvtml/en/animals.kvtml
-%{_kde_appsdir}/kvtml/en/clothing.kvtml
-%{_kde_appsdir}/kvtml/en/computers.kvtml
-%{_kde_appsdir}/kvtml/en/currencies.kvtml
-%{_kde_appsdir}/kvtml/en/easy.kvtml
-%{_kde_appsdir}/kvtml/en/fruits.kvtml
-%{_kde_appsdir}/kvtml/en/hard.kvtml
-%{_kde_appsdir}/kvtml/en/inventions.kvtml
-%{_kde_appsdir}/kvtml/en/medium.kvtml
-%{_kde_appsdir}/kvtml/en/numbers.kvtml
-%{_kde_appsdir}/kvtml/en/objects.kvtml
-%{_kde_appsdir}/kvtml/en/people.kvtml
-%{_kde_appsdir}/kvtml/en/professions.kvtml
-%{_kde_appsdir}/kvtml/en/space.kvtml
-%{_kde_appsdir}/kvtml/en/sports.kvtml
-%{_kde_appsdir}/kvtml/en/transportation.kvtml
-%{_kde_appsdir}/kvtml/en/vegetables.kvtml
-%{_kde_appsdir}/kvtml/en/worldcapitals.kvtml
-%{_iconsdir}/hicolor/*/actions/editplots.png
-%{_iconsdir}/hicolor/*/actions/functionhelp.png
-%{_iconsdir}/hicolor/*/actions/maximum.png
-%{_iconsdir}/hicolor/*/actions/minimum.png
-%{_iconsdir}/hicolor/*/actions/newdifferential.png
-%{_iconsdir}/hicolor/*/actions/newfunction.png
-%{_iconsdir}/hicolor/*/actions/newimplicit.png
-%{_iconsdir}/hicolor/*/actions/newparametric.png
-%{_iconsdir}/hicolor/*/actions/newpolar.png
-%{_iconsdir}/hicolor/*/actions/resetview.png
-%{_iconsdir}/hicolor/scalable/actions/deriv_func.svgz
-%{_iconsdir}/hicolor/scalable/actions/editconstants.svgz
-%{_iconsdir}/hicolor/scalable/actions/editplots.svgz
-%{_iconsdir}/hicolor/scalable/actions/functionhelp.svgz
-%{_iconsdir}/hicolor/scalable/actions/integral_func.svgz
-%{_iconsdir}/hicolor/scalable/actions/maximum.svgz
-%{_iconsdir}/hicolor/scalable/actions/minimum.svgz
-%{_iconsdir}/hicolor/scalable/actions/newfunction.svgz
-%{_iconsdir}/hicolor/scalable/actions/newparametric.svgz
-%{_iconsdir}/hicolor/scalable/actions/newpolar.svgz
-%{_iconsdir}/hicolor/scalable/actions/resetview.svgz
-%{_iconsdir}/hicolor/*/actions/coords.png
-%{_iconsdir}/hicolor/*/actions/deriv_func.png
-%{_iconsdir}/hicolor/*/actions/editconstants.png
-%{_iconsdir}/hicolor/*/actions/func.png
-%{_iconsdir}/hicolor/*/actions/integral_func.png
-%{_iconsdir}/hicolor/*/actions/lessen.png
-%{_iconsdir}/hicolor/*/actions/magnify.png
+Runtime library for KDE Education Application.
 
 #---------------------------------------------
 
@@ -113,6 +58,16 @@ Files needed to build applications based on %{name}.
 %makeinstall_std -C build
 
 %changelog
+* Tue Nov 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 14.12.0-1
+- New version 14.12.0
+- Drop ancient Conflicts and Obsoletes
+
+* Wed Oct 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.2-1
+- New version 4.14.2
+
+* Mon Sep 29 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.1-1
+- New version 4.14.1
+
 * Tue Jul 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.13.3-1
 - New version 4.13.3
 
