@@ -1,7 +1,7 @@
 Summary:	Free Educational Software based on the KDE technologies
 Name:		libkdeedu
-Version:	14.12.0
-Release:	2
+Version:	4.14.3
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org
@@ -11,6 +11,56 @@ BuildRequires:	kdelibs4-devel
 
 %description
 Runtime library for KDE Education Application.
+
+%files
+%doc README AUTHORS
+%dir %{_kde_appsdir}/kvtml/en
+%{_kde_appsdir}/kvtml/en/animals.kvtml
+%{_kde_appsdir}/kvtml/en/clothing.kvtml
+%{_kde_appsdir}/kvtml/en/computers.kvtml
+%{_kde_appsdir}/kvtml/en/currencies.kvtml
+%{_kde_appsdir}/kvtml/en/easy.kvtml
+%{_kde_appsdir}/kvtml/en/fruits.kvtml
+%{_kde_appsdir}/kvtml/en/hard.kvtml
+%{_kde_appsdir}/kvtml/en/inventions.kvtml
+%{_kde_appsdir}/kvtml/en/medium.kvtml
+%{_kde_appsdir}/kvtml/en/numbers.kvtml
+%{_kde_appsdir}/kvtml/en/objects.kvtml
+%{_kde_appsdir}/kvtml/en/people.kvtml
+%{_kde_appsdir}/kvtml/en/professions.kvtml
+%{_kde_appsdir}/kvtml/en/space.kvtml
+%{_kde_appsdir}/kvtml/en/sports.kvtml
+%{_kde_appsdir}/kvtml/en/transportation.kvtml
+%{_kde_appsdir}/kvtml/en/vegetables.kvtml
+%{_kde_appsdir}/kvtml/en/worldcapitals.kvtml
+%{_iconsdir}/hicolor/*/actions/editplots.png
+%{_iconsdir}/hicolor/*/actions/functionhelp.png
+%{_iconsdir}/hicolor/*/actions/maximum.png
+%{_iconsdir}/hicolor/*/actions/minimum.png
+%{_iconsdir}/hicolor/*/actions/newdifferential.png
+%{_iconsdir}/hicolor/*/actions/newfunction.png
+%{_iconsdir}/hicolor/*/actions/newimplicit.png
+%{_iconsdir}/hicolor/*/actions/newparametric.png
+%{_iconsdir}/hicolor/*/actions/newpolar.png
+%{_iconsdir}/hicolor/*/actions/resetview.png
+%{_iconsdir}/hicolor/scalable/actions/deriv_func.svgz
+%{_iconsdir}/hicolor/scalable/actions/editconstants.svgz
+%{_iconsdir}/hicolor/scalable/actions/editplots.svgz
+%{_iconsdir}/hicolor/scalable/actions/functionhelp.svgz
+%{_iconsdir}/hicolor/scalable/actions/integral_func.svgz
+%{_iconsdir}/hicolor/scalable/actions/maximum.svgz
+%{_iconsdir}/hicolor/scalable/actions/minimum.svgz
+%{_iconsdir}/hicolor/scalable/actions/newfunction.svgz
+%{_iconsdir}/hicolor/scalable/actions/newparametric.svgz
+%{_iconsdir}/hicolor/scalable/actions/newpolar.svgz
+%{_iconsdir}/hicolor/scalable/actions/resetview.svgz
+%{_iconsdir}/hicolor/*/actions/coords.png
+%{_iconsdir}/hicolor/*/actions/deriv_func.png
+%{_iconsdir}/hicolor/*/actions/editconstants.png
+%{_iconsdir}/hicolor/*/actions/func.png
+%{_iconsdir}/hicolor/*/actions/integral_func.png
+%{_iconsdir}/hicolor/*/actions/lessen.png
+%{_iconsdir}/hicolor/*/actions/magnify.png
 
 #---------------------------------------------
 
@@ -58,8 +108,8 @@ Files needed to build applications based on %{name}.
 %makeinstall_std -C build
 
 %changelog
-* Tue Nov 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 14.12.0-1
-- New version 14.12.0
+* Tue Nov 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.3-1
+- New version 4.14.3
 - Drop ancient Conflicts and Obsoletes
 
 * Wed Oct 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.2-1
