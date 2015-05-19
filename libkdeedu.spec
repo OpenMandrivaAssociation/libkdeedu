@@ -8,7 +8,7 @@ Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org
 Source0:	ftp://ftp.kde.org/pub/kde/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	automoc4
-BuildRequires:	kdelibs4-devel
+BuildRequires:	kdelibs-devel
 
 %description
 Runtime library for KDE Education Application.
@@ -33,7 +33,7 @@ Runtime library for KDE Education Application
 %package devel
 Summary:	Devel stuff for %{name}
 Group:		Development/KDE and Qt
-Requires:	kdelibs4-devel
+Requires:	kdelibs-devel
 Requires:	%{libkeduvocdocument} = %{version}-%{release}
 Conflicts:	kdeedu4-devel < 4.6.90
 
