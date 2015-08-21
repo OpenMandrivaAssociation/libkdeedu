@@ -1,8 +1,8 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Summary:	Free Educational Software based on the KDE technologies
 Name:		libkdeedu
-Version:	15.04.3
-Release:	2
+Version:	15.08.0
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org
@@ -52,7 +52,8 @@ Files needed to build applications based on %{name}.
 %setup -q
 
 %build
-%cmake_kde4
+%cmake_kde4 \
+	-DCMAKE_MINIMUM_REQUIRED_VERSION=3.1
 %make
 
 %install
