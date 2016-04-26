@@ -1,4 +1,2 @@
-removed_sources:
-  libkdeedu-15.08.0.tar.xz: 74a8492c533c4e6054297b12dd443cce19dcdd96
 sources:
-  libkdeedu-15.12.3.tar.xz: 1011e5211c474c1cb53673c056ecb5c017a4c168
+  libkdeedu-16.04.0.tar.xz: bae0db4e46913eee6a2542670098b4e79fadf888
