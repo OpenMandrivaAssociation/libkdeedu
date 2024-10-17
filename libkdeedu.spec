@@ -5,7 +5,7 @@ Version:	16.04.3
 Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Url:		http://edu.kde.org
+Url:		https://edu.kde.org
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	automoc4
 BuildRequires:	kdelibs-devel
